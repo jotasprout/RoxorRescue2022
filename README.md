@@ -8,8 +8,7 @@ In such a situation, #offlineFirst is a huge benefit.
 
 Here is the current UI/UX concept I scrambled in Photoshop:
 
-![Hamburger menu in upper-left will contain settings. Image icon in lower-right is for taking pix.]
-(https://github.com/jotasprout/RoxorRescue/blob/master/imgs/UIsketch.jpg)
+![Hamburger menu in upper-left will contain settings. Image icon in lower-right is for taking pix.](https://github.com/jotasprout/RoxorRescue/blob/master/imgs/UIsketch.jpg)
 
 ## Sources & Resources
 
@@ -23,9 +22,7 @@ There is also something called Urban Search & Rescue Field Operations Guide (FOG
 
 Concept and purpose of app based on what is commonly referred to as the "Katrina X." The following image is from Wikipedia:
 
-![Each diamond contains image about search(es) performed on the house.]
-(https://github.com/jotasprout/RoxorRescue/blob/master/imgs/UIsketch.jpg)
-
+![Each diamond contains image about search(es) performed on the house.](https://github.com/jotasprout/RoxorRescue/blob/master/fema/Katrina_x_small.jpg)
 
 ## IBM Cloud stuff used
 - one of the IBM cloud things
