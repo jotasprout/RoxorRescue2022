@@ -11,10 +11,21 @@ Here is the current UI/UX concept I scrambled in Photoshop:
 ![Hamburger menu in upper-left will contain settings. Image icon in lower-right is for taking pix.]
 (https://github.com/jotasprout/RoxorRescue/blob/master/imgs/UIsketch.jpg)
 
+## Sources & Resources
+
+National Urban Search & Rescue (US&R) Response System Rescue Field Operations Guide US&R-23-FG
+
+https://www.fema.gov/pdf/emergency/usr/usr_23_20080205_rog.pdf
+
+https://www.fema.gov/pdf/emergency/usr/usr_fog_sept_25_2003_color_final.pdf
+
+There is also something called Urban Search & Rescue Field Operations Guide (FOG) Edition 8.2 -- September 2017 that somebody is charging for but I'm sure there's a free, publicly available one somewhere because people are skeezy like that.
+
 Concept and purpose of app based on what is commonly referred to as the "Katrina X." The following image is from Wikipedia:
 
 ![Each diamond contains image about search(es) performed on the house.]
 (https://github.com/jotasprout/RoxorRescue/blob/master/imgs/UIsketch.jpg)
+
 
 ## IBM Cloud stuff used
 - one of the IBM cloud things
