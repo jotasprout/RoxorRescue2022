@@ -17,6 +17,42 @@
             <input class="input-group" type="file" name="observeAsset" accept="image/jpeg,image/jpg,image/png,image/gif,audio/mp3,audio/m4a" />
         </div>
     </div>
+<!--
+
+    FROM A PHP-related FORM
+
+    if(!empty($assetFile)){
+
+    if (!is_dir('caseAssets/' . $caseID)) {
+        mkdir('caseAssets/' . $caseID, 0777);
+    }
+
+    $upload_dir = 'caseAssets/' . $caseID . '/'; // upload directory
+
+    $assetExt = strtolower(pathinfo($assetFile,PATHINFO_EXTENSION)); // get image extension
+
+    // valid image extensions
+    $valid_extensions = array('jpeg', 'jpg', 'png', 'gif', 'm4a', 'mp3'); // valid extensions
+
+    // rename uploading image
+    $observeAsset = rand(1000,1000000).".".$assetExt;
+        
+    // allow valid image file formats
+    if(in_array($assetExt, $valid_extensions)){			
+        // Check file size '5MB'
+        if($assetSize < 5000000)				{
+            move_uploaded_file($tmp_dir,$upload_dir.$observeAsset);
+        }
+        else{
+            $errMSG = "Sorry, your file is too large.";
+        }
+    }
+    else{
+        $errMSG = "Sorry, only JPG, JPEG, PNG, GIF, M4A, and MP3 files are allowed.";		
+    }
+
+-->
+
 <!-- From Stakeout Observation form -->
 </body>
 </html>
