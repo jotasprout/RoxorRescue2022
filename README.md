@@ -2,6 +2,10 @@
 Submission for #CallForCode
 callforcode.org
 
+[Deploy to IBM Cloud](#deploy-to-ibm-cloud)
+
+[Deploy to IBM Cloud](https://bluemix.net/deploy?repository=https://github.com/jotasprout/RoxorRescue)
+
 Application and system for collaborative, offline-first, search and rescue. Users can track structures searched and store data about such S&R which can be shared and synced between users and (after it is developed) between teams of users.
 
 In such a situation, #offlineFirst is a huge benefit.
