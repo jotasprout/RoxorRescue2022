@@ -13,49 +13,60 @@
 
 <div class="container">
 
-<!-- Row 1 -->
-<div class="row">
-	<div id="datetime" class="quadrant">
-		<p id="date">Date</p>
-		<p id="time">Time</p>
-	</div>
-</div>
-
-<!-- Row 2 -->
-<div class="row">
-	<div id="row2inner">
-		<div id="tf" class="quadrant">
-			<p>TF</p>
+	<!-- Row 1 -->
+	<div class="row">
+		<div id="datetime" class="quadrant">
+			<p id="date">Date</p>
+			<p id="time">Time</p>
 		</div>
-		<div id="hazards" class="quadrant">
-			<p>Hazards</p>
-		</div>	
 	</div>
-</div>
 
-<!-- Row 3 -->		
-<div class="row">
-	<div id="victims" class="quadrant">
-		<p>Victims</p>
+	<!-- Row 2 -->
+	<div class="row">
+		<div id="row2inner">
+			<div id="tf" class="quadrant">
+				<p>TF</p>
+			</div>
+			<div id="hazards" class="quadrant">
+				<p>Hazards</p>
+			</div>	
+		</div>
 	</div>
-</div>
 
-<div>
-	<input type="text" readonly="readonly" value="" id="lat" name="latitude">
-	<input type="text" readonly="readonly" value="" id="lng" name="longitude">
-</div>
+	<!-- Row 3 -->		
+	<div class="row">
+		<div id="victims" class="quadrant">
+			<p>Victims</p>
+		</div>
+	</div>
 
-<div>
-	<div id="lat"></div>
-	<div id="lng"></div>
-</div>
+	<div>
+		<input type="text" readonly="readonly" value="" id="lat" name="latitude">
+		<input type="text" readonly="readonly" value="" id="lng" name="longitude">
+	</div>
+
+	<div>
+		<div id="lat"></div>
+		<div id="lng"></div>
+	</div>
+
+	<div class="input">
+		<video id="video">Video not available</video>
+		<button id="snap">Take Photo</button>
+	</div>
+	<canvas id="canvas"></canvas>
+	<div class="output">
+		<img id="photo" alt="photo appears here">
+	</div>
 
 </div>
-
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="js/datetime.js"></script>
 <script src="js/geoloc.js"></script>
+<!--
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
   type="text/javascript"></script>
+-->
 
 </body>
 </html>
