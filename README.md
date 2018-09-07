@@ -2,8 +2,6 @@
 Submission for #CallForCode
 callforcode.org
 
-[Deploy to IBM Cloud](#deploy-to-ibm-cloud)
-
 [Deploy to IBM Cloud](https://bluemix.net/deploy?repository=https://github.com/jotasprout/RoxorRescue)
 
 Application and system for collaborative, offline-first, search and rescue. Users can track structures searched and store data about such S&R which can be shared and synced between users and (after it is developed) between teams of users.
@@ -12,31 +10,43 @@ In such a situation, #offlineFirst is a huge benefit.
 
 Here is the current UI/UX concept I scrambled in Photoshop:
 
-![Hamburger menu in upper-left will contain settings. Image icon in lower-right is for taking pix.](https://github.com/jotasprout/RoxorRescue/blob/master/imgs/UIsketch.jpg)
+![Photo of a house with FEMA search symbols overlay](https://github.com/jotasprout/RoxorRescue/blob/master/imgs/UIsketch.jpg)
+
+Hamburger menu in upper-left will contain settings. Image icon in lower-right is for taking pix.
 
 ## Sources & Resources
 
-National Urban Search & Rescue (US&R) Response System Rescue Field Operations Guide US&R-23-FG
+[National Urban Search & Rescue (US&R) Response System Rescue Field Operations Guide US&R-23-FG](https://www.fema.gov/pdf/emergency/usr/usr_23_20080205_rog.pdf)
 
-https://www.fema.gov/pdf/emergency/usr/usr_23_20080205_rog.pdf
+[2003 version](https://www.fema.gov/pdf/emergency/usr/usr_fog_sept_25_2003_color_final.pdf)
 
-https://www.fema.gov/pdf/emergency/usr/usr_fog_sept_25_2003_color_final.pdf
-
-There is also something called Urban Search & Rescue Field Operations Guide (FOG) Edition 8.2 -- September 2017 that somebody is charging for but I'm sure there's a free, publicly available one somewhere because people are skeezy like that.
+There is also something called _Urban Search & Rescue Field Operations Guide (FOG) Edition 8.2 -- September 2017_ that somebody is charging for but I'm sure there's a free, publicly available one somewhere because people are skeezy like that.
 
 Concept and purpose of app based on what is commonly referred to as the "Katrina X." The following image is from Wikipedia:
 
-![Each diamond contains image about search(es) performed on the house.](https://github.com/jotasprout/RoxorRescue/blob/master/fema/Katrina_x_small.jpg)
+![Each diamond contains image about search(es) performed on the house.](https://github.com/jotasprout/RoxorRescue/blob/master/imgs/Katrina_x_small.jpg)
 
 ## IBM Cloud stuff used
-- one of the IBM cloud things
-- another IBM cloud thing
+- Cloudant (CloudUpps could be a free alternative)
+- Wherever "Deploy" stores stuff
+- Their git thing
+- Something that could analyze and update which addresses are searched?
+
+## Other Tools
+- OpenStreetMap
+- eoCoder
+- OpenStreetMap
+- turbo thingy
 
 ## Links to Call for Code related stuff
 - Noodle thing
 - My IBM Coder profile page or whatever
 
 ## Features - Current
+- Displays date
+- Displays time
+- Displays Longitude & Latitude
+- Hold up device camera toward structure for address (using device sensors, geolocation, and potential APIs)
 
 ### Current - Completed
 
@@ -45,13 +55,16 @@ Concept and purpose of app based on what is commonly referred to as the "Katrina
 - X-Code overlaid onto image of structure
 
 ### Future - Near
-- Hold up device camera toward structure for address (using device sensors, geolocation, and potential APIs)
+
 - Could incorporate data and interactive UI via augmented reality in personell equipment
 - Indications of areas with power outages and/or power returned
 - Displays map of area based on an API
 - Shows user location on map
 - Indicates which houses have been searched (complete or incomplete) via "filled" or "empty" outline (first idea is these outlines are based on those in GoogleMaps)
 - Set a region to search by creating polygon path on GoogleMap (or whatever)
+
+![Screenshot of Miami Beach in GoogleMaps](https://github.com/jotasprout/RoxorRescue/blob/master/imgs/miamiBeachGoogleMap.png)
+
 - Method to create region (at the moment, I think) is pressing four (or three or five) streets to enclose an area on the map
 - Above method creates list of structures
 - Above list used to confirm addresses and display completion (percent and/or X of Y)
