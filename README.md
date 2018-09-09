@@ -33,10 +33,10 @@ Concept and purpose of app based on what is commonly referred to as the "Katrina
 - Something that could analyze and update which addresses are searched?
 
 ## Other Tools
-- OpenStreetMap
-- eoCoder
-- OpenStreetMap
+- [OpenStreetMap](https://www.openstreetmap.org)
+- GeoCoder
 - turbo thingy
+- [GeoCoder](https://geocoding.geo.census.gov/) from .gov 
 
 ## Links to Call for Code related stuff
 - Noodle thing

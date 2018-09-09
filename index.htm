@@ -6,12 +6,22 @@
 	<link rel='stylesheet' type='text/css' href='css/rescuestyle.css'>
     <meta name='viewport' content='user-scalable=no, width=device-width, initial-scale=1' />
     <meta name='apple-mobile-web-app-capable' content='yes'>
-    <meta name='mobile-web-app-capable' content='yes'>	
+	<meta name='mobile-web-app-capable' content='yes'>	
+	<link rel="stylesheet" href="main.css" type="text/css" media="all">
+	<link rel="stylesheet" href="examples/MDNphoto/main.css" type="text/css" media="all">
 </head>
 
 <body>
 
 <div class="container">
+
+	<!-- row 0 -->
+	<div>
+		<label for="lat">Latitude</label>
+		<input type="text" readonly="readonly" value="" id="lat" name="latitude">
+		<label for="lng">Longitude</label>
+		<input type="text" readonly="readonly" value="" id="lng" name="longitude">
+	</div>	
 
 	<!-- Row 1 -->
 	<div class="row">
@@ -36,28 +46,40 @@
 	<!-- Row 3 -->		
 	<div class="row">
 		<div id="victims" class="quadrant">
-			<p>Victims</p>
+			<label for="living">Living</label>
+			<select id="living">
+				<option value=0>0</option>
+				<option value=1>1</option>
+				<option value=2>2</option>
+				<option value=3>3</option>
+				<option value=4>4</option>
+                <option value=5>5</option>
+			</select>
+
+			<label for="dead">Dead</label>
+			<select id="dead">
+				<option value=0>0</option>
+				<option value=1>1</option>
+				<option value=2>2</option>
+				<option value=3>3</option>
+				<option value=4>4</option>
+                <option value=5>5</option>
+			</select>			
 		</div>
 	</div>
 
-	<div>
-		<input type="text" readonly="readonly" value="" id="lat" name="latitude">
-		<input type="text" readonly="readonly" value="" id="lng" name="longitude">
+	<!-- Row  4 -->
+	<div class="row">
+		<div class="input">
+				<video id="video">Video not available</video>
+				<button id="snap">Take Photo</button>
+		</div>
+		<canvas id="canvas"></canvas>
+		<div class="output">
+			<img id="photo" alt="photo appears here">
+		</div>
 	</div>
 
-	<div>
-		<div id="lat"></div>
-		<div id="lng"></div>
-	</div>
-
-	<div class="input">
-		<video id="video">Video not available</video>
-		<button id="snap">Take Photo</button>
-	</div>
-	<canvas id="canvas"></canvas>
-	<div class="output">
-		<img id="photo" alt="photo appears here">
-	</div>
 
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
