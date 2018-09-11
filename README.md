@@ -14,6 +14,15 @@ Here is the current UI/UX concept I scrambled in Photoshop:
 
 Hamburger menu in upper-left will contain settings. Image icon in lower-right is for taking pix.
 
+![Screenshot of Miami Beach in GoogleMaps](https://github.com/jotasprout/RoxorRescue/blob/master/imgs/miamiBeachGoogleMap.png)
+User can press structure on map to add/update information about search efforts.
+
+![Similar map of Miami Beach with some structures colored in green or blue](https://github.com/jotasprout/RoxorRescue/blob/master/imgs/miamiBeachGoogleMap_redGreen.jpg_)
+In Map Display, searched structures identified by color (symbols would be better for accessibility but may be too small to be useful). For example, green indicates a searched structure with no victims (or all victims are living). Red may indicate either dead victims or hazards. Designer(s) need to interview end users such as Search & Rescue team members to determine best design for features like this.
+
+![Similar map of Miami Beach. Two blocks have blue borders](https://github.com/jotasprout/RoxorRescue/blob/master/imgs/miamiBeachGoogleMap_regions.png)
+Map view also used to coordinate teams into regions, supporting them with real-time data.
+
 ## Sources & Resources
 
 [National Urban Search & Rescue (US&R) Response System Rescue Field Operations Guide US&R-23-FG](https://www.fema.gov/pdf/emergency/usr/usr_23_20080205_rog.pdf)
@@ -62,9 +71,6 @@ Concept and purpose of app based on what is commonly referred to as the "Katrina
 - Shows user location on map
 - Indicates which houses have been searched (complete or incomplete) via "filled" or "empty" outline (first idea is these outlines are based on those in GoogleMaps)
 - Set a region to search by creating polygon path on GoogleMap (or whatever)
-
-![Screenshot of Miami Beach in GoogleMaps](https://github.com/jotasprout/RoxorRescue/blob/master/imgs/miamiBeachGoogleMap.png)
-
 - Method to create region (at the moment, I think) is pressing four (or three or five) streets to enclose an area on the map
 - Above method creates list of structures
 - Above list used to confirm addresses and display completion (percent and/or X of Y)
