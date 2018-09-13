@@ -1,0 +1,15 @@
+{
+    "short_name": "Rescue",
+    "name": "RoxorRescue",
+    "icons": [
+        {
+            "src": "imgs/favicon.png",
+            "type": "image/png",
+            "sizes": "32x32"
+        }       
+    ],
+    "start_url": "index.htm",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "theme_color": "#dddddd"
+}
