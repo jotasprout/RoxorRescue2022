@@ -1,7 +1,7 @@
 (function() {
 
     const width = 320;
-    const height = 0;
+    let height = 0;
 
     let streaming = false;
 
@@ -18,6 +18,7 @@
 
         // next four lines were in code but not tutorial
         // maybe related to not working
+        /*
         navigator.getMedia = (  navigator.getUserMedia ||
                                 navigator.webkitGetUserMedia ||
                                 navigator.mozGetUserMedia ||
@@ -25,7 +26,7 @@
 
         // Function below is from tutorial
         // maybe related to not working
-        /*
+        */
         navigator.mediaDevices.getUserMedia(
             { 
                 video: true, 
@@ -39,8 +40,7 @@
         .catch(function(err) {
             console.log("Ann error occurred! " + err);
         });
-        */
-
+        /*   
         // Below is function from code "equivalent" to commented out tutorial code above
         navigator.getMedia(
             {
@@ -59,7 +59,8 @@
             function(err) {
               console.log("An error occured! " + err);
             }
-        );        
+        );               
+        */
 
         video.addEventListener('canplay', function(ev){
             if (!streaming){
