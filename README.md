@@ -25,11 +25,17 @@ Here is the current UI/UX concept I scrambled in Photoshop:
 
 ![Photo of a house with FEMA search symbols overlay](https://github.com/jotasprout/RoxorRescue/blob/master/imgs/UIsketch.jpg)
 
+<img src="https://github.com/jotasprout/RoxorRescue/blob/master/imgs/UIsketch.jpg" width="500" height=auto>
+
 Hamburger menu in upper-left will contain settings. Image icon in lower-right is for taking pix.
 
 ![Screenshot of Miami Beach in GoogleMaps](https://github.com/jotasprout/RoxorRescue/blob/master/imgs/miamiBeachGoogleMap.png)
 
+<img src="https://github.com/jotasprout/RoxorRescue/blob/master/imgs/miamiBeachGoogleMap.png" width="500" height=auto>
+
 User can press structure on map to add/update information about search efforts.
+
+Structure closest to user will have a colored border around it.
 
 ![Similar map of Miami Beach with some structures colored in green or blue](https://github.com/jotasprout/RoxorRescue/blob/master/imgs/miamiBeachGoogleMap_redGreen.jpg)
 
