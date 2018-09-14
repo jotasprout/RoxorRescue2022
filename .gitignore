@@ -1,3 +1,5 @@
 js/toomanysecrets
 .DS_Store
 resources
+node_modules
+old

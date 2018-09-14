@@ -14,6 +14,8 @@
 
 <div class="container">
 
+	<form method="PUT" action="" id="structureInfo">
+
 	<!-- row 0 -->
 	<div>
 		<label for="lat">Latitude</label>
@@ -68,6 +70,8 @@
 	</div>
 
 	<!-- Row  4 -->
+	<!-- This is is still my preferred method but I can only get it to work at home on iMac -->
+	<!-- May have to use same method as Stakeout for time being -->
 	<div class="row">
 		<div class="input">
 				<video id="video">Video not available</video>
@@ -79,12 +83,16 @@
 		</div>
 	</div>
 
+	</form>
 
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="js/datetime.js"></script>
 <script src="js/geoloc.js"></script>
 <script src="js/photo.js"></script>
+
+<script src="js/pouchdb-7.0.0.min.js"></script>
+
 <!--
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
   type="text/javascript"></script>

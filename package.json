@@ -1,6 +1,15 @@
 {
     "name": "RoxorRescue",
+    "author": "Jay Sprout",
     "version": "0.1.0",
-    "description": "search and rescue app",
-    "main": "index.htm"
+    "description": "Collaborative, offline-first search and rescue app",
+    "main": "index.htm",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jotasprout/RoxorRescue.git"
+    },
+    "license": "Unlicense",
+    "devDependencies": {
+        "pouchdb": "^7.0.0"
+    }
 }
