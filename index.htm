@@ -12,6 +12,20 @@
 
 <body>
 
+<div id="photoBG">
+	
+	<div class="output" id="output">
+		<img id="photo" alt="photo appears here">
+	</div>
+
+	<canvas id="canvas"></canvas>
+
+	<div class="input" id="input">
+		<video id="video">Video not available</video>
+	</div>
+
+</div>
+
 <div class="container">
 
 	<form method="PUT" action="" id="structureInfo">
@@ -71,19 +85,12 @@
 
 	<!-- Row  4 -->
 	<div class="row">
-		<div class="input">
-			<video id="video">Video not available</video>
-			<button id="snap">Take Photo</button>
-		</div>
-		<canvas id="canvas"></canvas>
-		<div class="output">
-			<img id="photo" alt="photo appears here">
-		</div>
-	</div>
+		<button id="snap">Take Photo</button>
+	</div>	
 
 	</form>
 
-</div>
+</div> <!-- End of Container -->
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="js/datetime.js"></script>

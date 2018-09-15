@@ -5,6 +5,9 @@
 
     let streaming = false;
 
+    const previewInner = document.getElementById('video');    
+    const previewOuter = document.getElementById('input'); 
+
     let video = null;
     let canvas = null;
     let photo = null;
@@ -17,7 +20,7 @@
         snap = document.getElementById('snap');
 
         // next four lines were in code but not tutorial
-        // maybe related to not working
+        // because they are deprecated
         /*
         navigator.getMedia = (  navigator.getUserMedia ||
                                 navigator.webkitGetUserMedia ||
@@ -29,7 +32,15 @@
         */
         navigator.mediaDevices.getUserMedia(
             { 
-                video: true, 
+                video: true,
+                // below needs an if statement
+                /*
+                video: { // true,
+                     facingMode: {
+                         exact: 'environment'
+                     }
+                },
+                */
                 audio: false 
             }
         )
@@ -107,6 +118,8 @@
 
             var data = canvas.toDataURL('image/png');
             photo.setAttribute('src', data);
+            previewInner.setAttribute('class','hiddenPreview');
+            previewOuter.setAttribute('class','hiddenPreview');
         } else {
             clearPhoto();
         }
@@ -115,5 +128,6 @@
     // Set up our event listener to run the startup process
     // once loading is complete.
     window.addEventListener('load', startup, false);
+
 })();
 // Also added the (); at the very end which wasn't in tutorial
