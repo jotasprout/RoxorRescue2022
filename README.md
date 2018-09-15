@@ -21,23 +21,35 @@ Application and system for collaborative, offline-first, search and rescue. User
 
 In such a situation, #offlineFirst is a huge benefit.
 
+## 5-12 Recon Operations (covered by RoxorRescue)
+- Identify buildings
+- Structure/hazards marking
+- Area/building search
+- Search/assessment marking
+- Victim location identification
+- Sketch search area and record information
+- Comunicate findings to appropriate manager
+
+Only item in _US&R-23-FG_ that might not be covered is "Assess void space and atmospheric conditions."
+
+Current vision for app includes these simple tasks. Future additions (either to this mobile version or a larger "manager" version) could include:
+- names & titles of users/team members
+- team assignments of users/team members
+- Reports, tasks, visual info per _US&R-23-FG_ 5-1 thru 5-4 and 5-13 thru 5-14
+- Mobile app could have short menus with editable fields supplemented by a "manager" populating menus with options unique to but standard within disaster region or entity
+
 Here is the current UI/UX concept I scrambled in Photoshop:
 
-![Photo of a house with FEMA search symbols overlay](https://github.com/jotasprout/RoxorRescue/blob/master/imgs/UIsketch.jpg)
-
-<img src="https://github.com/jotasprout/RoxorRescue/blob/master/imgs/UIsketch.jpg" width="500" height=auto>
+<img src="https://github.com/jotasprout/RoxorRescue/blob/master/imgs/UIsketch.jpg" width="500" height=auto alt="Photo of a house with FEMA search symbols overlay">
 
 Hamburger menu in upper-left will contain settings. Image icon in lower-right is for taking pix.
 
-![Screenshot of Miami Beach in GoogleMaps](https://github.com/jotasprout/RoxorRescue/blob/master/imgs/miamiBeachGoogleMap.png)
-
-<img src="https://github.com/jotasprout/RoxorRescue/blob/master/imgs/miamiBeachGoogleMap.png" width="500" height=auto>
+<img src="https://github.com/jotasprout/RoxorRescue/blob/master/imgs/miamiBeachGoogleMap_redGreen.jpg" width="500" height=auto alt="Screenshot of Miami Beach in GoogleMaps. In Photoshop, I added strokes around structures and filled some with green or red">
 
 User can press structure on map to add/update information about search efforts.
 
 Structure closest to user will have a colored border around it.
-
-![Similar map of Miami Beach with some structures colored in green or blue](https://github.com/jotasprout/RoxorRescue/blob/master/imgs/miamiBeachGoogleMap_redGreen.jpg)
+**THIS NEEDS AN IMAGE**
 
 In Map Display, searched structures identified by color (symbols would be better for accessibility but may be too small to be useful). For example, green indicates a searched structure with no victims (or all victims are living). Red may indicate either dead victims or hazards. Designer(s) need to interview end users such as Search & Rescue team members to determine best design for features like this.
 
@@ -55,6 +67,17 @@ Alternate or additional markings (taken from _US&R-23-FG_) on map view indicatin
 - Structure not safe for normal US&R operations. Extensive safety measures must be taken before entry.
 - New search completed? This may not be need in app.
 - Structure significantly damaged. Shoring/removal of hazards may be required.
+
+Incomplete S&R Markings:
+- Filled circle at slashes intersection
+- Victim(s) location(s) marking(s). In "real life," markings include direction/arrow and distance but app would need/use the floor/location markings mentioned below
+- Box below slash(es) with floor(s) and quadrant(s) searched or "No Entry" if only exterior searched
+- "Cross out" marking when victim(s) removed (*see below*)
+
+5-9 INSARAG
+- Number of Live victims removed
+- Number of Dead victims removed
+- Persons unaccounted for
 
 ## Sources & Resources
 
