@@ -118,7 +118,7 @@ Concept and purpose of app based on what is commonly referred to as the "Katrina
 - X-Code overlaid onto image of structure
 
 ### Future - Near
-
+- Reverse GeoCoding for street address of structure (photo would confirm this as sometimes addresses gained like this aren't accurate -- this isn't too bad as _US&R-23-FG_ 5-3 "settles for" using "low numbers" if "no numbers known")
 - Could incorporate data and interactive UI via augmented reality in personell equipment
 - Indications of areas with power outages and/or power returned
 - Displays map of area based on an API
@@ -145,3 +145,20 @@ Concept and purpose of app based on what is commonly referred to as the "Katrina
 
 ## Use and Deployment
 [Deploy to IBM Cloud](https://bluemix.net/deploy?repository=https://github.com/jotasprout/RoxorRescue)
+
+# Tests
+**Location**
+- Latitude & Longitude display **online** using Chrome in MacOS
+- Latitude & Longitude display **online** using Firefox Developer Edition (**FDE**) in MacOS
+- Latitude & Longitude display **online** using Firefox in Windows 10
+- Latitude & Longitude display **online** using Edge in Windows 10
+- Latitude & Longitude **offline** display UNTESTED in MacOS
+- Latitude & Longitude **offline** display UNTESTED in Android
+- Reverse GeoCoding UNTESTED
+
+**Photo**
+- Photo taken **online** using Chrome in MacOS
+- Photo taken **online** using FDE in MacOS
+- Photo taken **online** using Firefox in Windows 10 
+- Photo taken **online** using Edge in Windows 10 *however* the image paints with dimensions distorted disproportionately (from "widescreen" to being stretched vertically to fit ... code _is supposed to_ take care of that)
+- Video works **online** using Chrome in Android on Galaxy s8 (site not responsive, button not visible, so I couldn't test taking photo)
