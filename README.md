@@ -148,10 +148,17 @@ Future additions (either to this mobile version or a larger "manager" version) c
 
 ## IBM Cloud stuff used
 - Cloudant (CloudUpps could be a free alternative if cost is a concern -- this app should be free to all who need it)
-- Foundry
+- Cloud Foundry CLI (now called IBM Cloud CLI?)
+- App ID for user registration and profiles?
+- Voice Agent with Watson
+- Is Watson Assistant a more appropriate tool than Voice Agent?
+- AI: Visual Recognition to "auto-fill" new structure when camera sees spray-painted markings or stickers
 - Their git thing
 - Voice activation and commands -- even interactivity ... AI can ask follow-up questions to data input
 - Something that could analyze and update which addresses are searched?
+- Could AI use growing data stockpile over time to predict potential hazards? "Warn" and "suggest" re: potential hazards?
+- What does Discover do, exactly? Could RoxorRescue potentially, automatically display an existing record or open a new record based on geoLocation (and Visual Recognition?)? User could confirm and continue using Voice?
+- Could IoT be used to tell user that a refridgerator or storeroom has food and water so user could inform living victims that can not yet be rescued? Could visual recognition and IoT be used separately or together to then advise whether victims can safely reach that food and water?
 
 ## Use and Deployment
 [Deploy to IBM Cloud](https://bluemix.net/deploy?repository=https://github.com/jotasprout/RoxorRescue)
