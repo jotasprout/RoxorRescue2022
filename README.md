@@ -137,10 +137,15 @@ Concept and purpose of app based on what is commonly referred to as the "Katrina
 - Remote, central can see and manage all teams, team members, and regions (optional, for orgs and locales with required infrastructure) and data
 - User can input database to which their data should sync
 
+### Future - Even Further
+- Voice activated input for data -- the great part about this is the simplicity of the commands
+- Augmented Reality with directional arrows, text, and symbols for hazards, victims, etc.
+
 ## IBM Cloud stuff used
 - Cloudant (CloudUpps could be a free alternative if cost is a concern -- this app should be free to all who need it)
 - Foundry
 - Their git thing
+- Voice activation and commands -- even interactivity ... AI can ask follow-up questions to data input
 - Something that could analyze and update which addresses are searched?
 
 ## Use and Deployment
