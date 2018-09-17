@@ -53,7 +53,11 @@
 				<p>TF</p>
 			</div>
 			<div id="hazards" class="quadrant">
-				<p>Hazards</p>
+				<label for="hazards">Hazards</label>
+				<select id="hazards">
+					<option value="rats">Rats</option>
+					<option value="zombies">Zombies</option>
+				</select>
 			</div>	
 		</div>
 	</div>
@@ -86,6 +90,11 @@
 	<!-- Row  4 -->
 	<div class="row">
 		<button id="snap">Take Photo</button>
+	</div>	
+
+	<!-- Row  5 -->
+	<div class="row">
+		<button id="saveStructure" onclick="makeSructure(hazards)">Save Structure</button>
 	</div>	
 
 	</form>
