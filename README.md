@@ -3,8 +3,11 @@ callforcode.org
 
 # Submission Application Information
 **Team Name:** RoxorSoxor
+
 **Submission Title:** RoxorRescue
-**Submission Summary:** Collaborative, centralized, offline-first, search and rescue.
+
+**Submission Summary:**  
+Collaborative, centralized, offline-first, search and rescue.
 
 **More Detailed Solution Description**
 Application and system for collaborative, offline-first, search and rescue. Users can track structures searched and store data about such S&R which can be shared and synced between users and (after it is developed) between teams of users.
@@ -49,11 +52,11 @@ Structure closest to user will have a colored border around it.
 
 In Map Display, searched structures identified by color (symbols would be better for accessibility but may be too small to be useful). For example, green indicates a searched structure with no victims (or all victims are living). Red may indicate either dead victims or hazards. Designer(s) need to interview end users such as Search & Rescue team members to determine best design for features like this.
 
-![Similar map of Miami Beach. Two blocks have blue borders](https://github.com/jotasprout/RoxorRescue/blob/master/imgs/miamiBeachGoogleMap_regions.jpg)
+<img src="https://github.com/jotasprout/RoxorRescue/blob/master/imgs/miamiBeachGoogleMap_regions.jpg" width="500" height=auto alt="Similar map of Miami Beach. Two blocks have blue borders">
 
 Map view also used to coordinate teams into regions, supporting them with real-time data.
 
-![Similar map of Miami Beach. Structures marked with search assessment symbols](https://github.com/jotasprout/RoxorRescue/blob/master/imgs/miamiBeachGoogleMap_searchAss.jpg)
+<img src="https://github.com/jotasprout/RoxorRescue/blob/master/imgs/miamiBeachGoogleMap_searchAss.jpg" width="500" height=auto alt="Similar map of Miami Beach. Structures marked with search assessment symbols">
 
 Alternate or additional markings (taken from _US&R-23-FG_) on map view indicating (from top to bottom):
 - "Structure relatively safe for US&R operations.
@@ -87,7 +90,7 @@ There is also something called _Urban Search & Rescue Field Operations Guide (FO
 
 Concept and purpose of app based on what is commonly referred to as the "Katrina X." The following image is from Wikipedia:
 
-![Each diamond contains image about search(es) performed on the house.](https://github.com/jotasprout/RoxorRescue/blob/master/imgs/Katrina_x_small.jpg)
+<img src="https://github.com/jotasprout/RoxorRescue/blob/master/imgs/Katrina_x_small.jpg" width="500" height=auto alt="Each diamond contains image about search(es) performed on the house.">
 
 ## Other Tools
 - [OpenStreetMap](https://www.openstreetmap.org)
