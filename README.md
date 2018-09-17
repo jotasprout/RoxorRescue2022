@@ -7,19 +7,7 @@ callforcode.org
 **Submission Summary:** Collaborative, centralized, offline-first, search and rescue.
 
 **More Detailed Solution Description**
-
-- Eliminates cost of spray paint
-- Eliminates running out of spray paint 
-- Eliminates need to carry bunch of spray paint cans
-- Consistent legibility of symbols and information
-- Centralization and consolidation of data
-- Eliminates having to clean off spray paint
-- Consistent data structure - in the past, different teams _"often used a derivative of the 'X'. Many improvised their own version, and some may not have used a marking system at all."_ (Miller) Also, from what I've read, there are multiple 'TFW' variants that, to this day, nobody knows the origin of.
-- No need to search for where 'X' may have been put by another team
-
 Application and system for collaborative, offline-first, search and rescue. Users can track structures searched and store data about such S&R which can be shared and synced between users and (after it is developed) between teams of users.
-
-In such a situation, #offlineFirst is a huge benefit.
 
 ## 5-12 Recon Operations (covered by RoxorRescue)
 - Identify buildings
@@ -32,12 +20,20 @@ In such a situation, #offlineFirst is a huge benefit.
 
 Only item in _US&R-23-FG_ that might not be covered is "Assess void space and atmospheric conditions."
 
-Current vision for app includes these simple tasks. Future additions (either to this mobile version or a larger "manager" version) could include:
-- names & titles of users/team members
-- team assignments of users/team members
-- Reports, tasks, visual info per _US&R-23-FG_ 5-1 thru 5-4 and 5-13 thru 5-14
-- Mobile app could have short menus with editable fields supplemented by a "manager" populating menus with options unique to but standard within disaster region or entity
+Current vision for app includes these simple tasks. 
 
+**Other Benefits**
+- Consistent data structure - in the past, different teams _"often used a derivative of the 'X'. Many improvised their own version, and some may not have used a marking system at all."_ (Miller) Also, from what I've read, there are multiple 'TFW' variants that, to this day, nobody knows the origin of.
+- No need to search for where 'X' may have been put by another team
+- In such a situation, #offlineFirst is a huge benefit.
+- Eliminates cost of spray paint
+- Eliminates running out of spray paint 
+- Eliminates need to carry bunch of spray paint cans
+- Consistent legibility of symbols and information
+- Centralization and consolidation of data
+- Eliminates having to clean off spray paint
+
+## UX/UI
 Here is the current UI/UX concept I scrambled in Photoshop:
 
 <img src="https://github.com/jotasprout/RoxorRescue/blob/master/imgs/UIsketch.jpg" width="500" height=auto alt="Photo of a house with FEMA search symbols overlay">
@@ -133,9 +129,15 @@ Concept and purpose of app based on what is commonly referred to as the "Katrina
 - Data syncs with other users (essential)
 
 ### Future - "Far"
+Future additions (either to this mobile version or a larger "manager" version) could include:
+
 - Data from all devices and teams consolidated in single database
 - Remote, central can see and manage all teams, team members, and regions (optional, for orgs and locales with required infrastructure) and data
 - User can input database to which their data should sync
+- names & titles of users/team members
+- team assignments of users/team members
+- Reports, tasks, visual info per _US&R-23-FG_ 5-1 thru 5-4 and 5-13 thru 5-14
+- Mobile app could have short menus with editable fields supplemented by a "manager" populating menus with options unique to but standard within disaster region or entity
 
 ### Future - Even Further
 - Voice activated input for data -- the great part about this is the simplicity of the commands
