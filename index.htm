@@ -41,17 +41,29 @@
 	<!-- Row 1 -->
 	<div class="row">
 		<div id="datetime" class="quadrant">
-			<p id="date">Date</p>
-			<p id="time">Time</p>
+			<label for="date">Date</label>
+			<input type="text" readonly="readonly" value="" id="date" name="date">
+
+			<label for="time">Time</label>
+			<input type="text" readonly="readonly" value="" id="time" name="time">
 		</div>
 	</div>
 
 	<!-- Row 2 -->
 	<div class="row">
 		<div id="row2inner">
+
 			<div id="tf" class="quadrant">
-				<p>TF</p>
-			</div>
+					<label for="taskforce">TF</label>
+					<select id="taskforce">
+						<option value="dea">DEA</option>
+						<option value="michigan-national-guard">MNG</option>
+						<option value="detroit-police-dept">DPD</option>
+						<option value="detroit-fire-department">DFD</option>
+						<option value="wayne-county-sherrif-dept">WCSD</option>
+					</select>
+				</div>				
+
 			<div id="hazards" class="quadrant">
 				<label for="hazards">Hazards</label>
 				<select id="hazards">
@@ -59,6 +71,7 @@
 					<option value="zombies">Zombies</option>
 				</select>
 			</div>	
+
 		</div>
 	</div>
 
