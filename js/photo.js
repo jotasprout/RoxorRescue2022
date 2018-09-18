@@ -5,9 +5,6 @@
 
     let streaming = false;
 
-    const previewInner = document.getElementById('video');    
-    const previewOuter = document.getElementById('input'); 
-
     let video = null;
     let canvas = null;
     let photo = null;
@@ -51,27 +48,7 @@
         .catch(function(err) {
             console.log("Ann error occurred! " + err);
         });
-        /*   
-        // Below is function from code "equivalent" to commented out tutorial code above
-        navigator.getMedia(
-            {
-              video: true,
-              audio: false
-            },
-            function(stream) {
-              if (navigator.mozGetUserMedia) {
-                video.mozSrcObject = stream;
-              } else {
-                var vendorURL = window.URL || window.webkitURL;
-                video.src = vendorURL.createObjectURL(stream);
-              }
-              video.play();
-            },
-            function(err) {
-              console.log("An error occured! " + err);
-            }
-        );               
-        */
+
 
         video.addEventListener('canplay', function(ev){
             if (!streaming){
@@ -95,6 +72,7 @@
         snap.addEventListener('click', function(ev){
             takePicture();
             ev.preventDefault();
+            stopHideVideo(video);
         }, false);
 
         clearPhoto();
@@ -109,6 +87,35 @@
         photo.setAttribute('src', data);
     }
 
+    function stopHideVideo(video){
+        stopStreamingVideo(video);
+        hidePreview();
+    }
+
+    function stopStreamingVideo(video){
+
+        /*
+        navigator.mediaDevices.getUserMedia({video: true,audio: false})
+            .then(stream => {
+                video.srcObject = stream;
+            })
+            .catch( (err) => {
+                console.log("Ann error occurred! " + err);
+            });
+            */
+        let stream = video.srcObject;
+        // let tracks = stream.getTracks();
+        stream.getTracks().forEach(track => track.stop());
+        video.srcObject = null;
+    }
+
+    function hidePreview(){
+        const previewInner = document.getElementById('video');    
+        const previewOuter = document.getElementById('input'); 
+        previewInner.setAttribute('class','hiddenPreview');
+        previewOuter.setAttribute('class','hiddenPreview');
+    }
+    
     function takePicture (){
         var context = canvas.getContext('2d');
         if (width && height) {
@@ -118,12 +125,11 @@
 
             var data = canvas.toDataURL('image/png');
             photo.setAttribute('src', data);
-            previewInner.setAttribute('class','hiddenPreview');
-            previewOuter.setAttribute('class','hiddenPreview');
         } else {
             clearPhoto();
         }
     }
+
     // adding next from code that wasn't in tutorial
     // Set up our event listener to run the startup process
     // once loading is complete.
