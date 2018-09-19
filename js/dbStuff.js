@@ -1,13 +1,17 @@
 (function () {
 
-    const form = document.getElementById('structureInfo');
-    let structureObject;
+    // let structureObject;
+
+    // let PouchDB = require("PouchDB");
 
     const pdb = new PouchDB('structures');
 
+    const form = document.getElementById('structureInfo');
+    
     const remoteCouch = "http://admin:passWordsSuck!@localhost:5984/structures";
 
-    structureObject = function (event) {
+    makeStructure = function (event) {
+        console.log("I am reading this function");
         let so = {};
         if (event.target._id.value == '') {
             so._id = new Date().toISOString();
@@ -30,7 +34,7 @@
         });
     } // end of structureObject
 
-    form.addEventListener('saveStructure', structureObject);
+    form.addEventListener('saveStructure', makeStructure);
 
     function showStructures() {
         pdb.allDocs (
