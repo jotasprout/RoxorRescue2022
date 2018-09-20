@@ -164,18 +164,25 @@ Future additions (either to this mobile version or a larger "manager" version) c
 [Deploy to IBM Cloud](https://bluemix.net/deploy?repository=https://github.com/jotasprout/RoxorRescue)
 
 # Tests
-**Location**
+**Latitude and Longitude**
 - Latitude & Longitude display **online** using Chrome in MacOS
 - Latitude & Longitude display **online** using Firefox Developer Edition (**FDE**) in MacOS
 - Latitude & Longitude display **online** using Firefox in Windows 10
 - Latitude & Longitude display **online** using Edge in Windows 10
+- Latitude & Longitude display **online** using Chromium in Bodhi Linux (Ubuntu 16.04)
+- Latitude & Longitude display **online** using Firefox in Bodhi Linux (Ubuntu 16.04)
 - Latitude & Longitude **offline** display UNTESTED in MacOS
 - Latitude & Longitude **offline** display UNTESTED in Android
-- Reverse GeoCoding UNTESTED
+
+**Reverse GeoCoding**
+
+UNTESTED
 
 **Photo**
 - Photo taken **online** using Chrome in MacOS
 - Photo taken **online** using FDE in MacOS
+- Photo taken **online** using Chromium in Bodhi Linux (Ubuntu 16.04)
+- Photo taken **online** using Firefox in Bodhi Linux (Ubuntu 16.04)
 - Photo taken **online** using Firefox in Windows 10 
 - Photo taken **online** using Edge in Windows 10 *however* the image paints with dimensions distorted disproportionately (from "widescreen" to being stretched vertically to fit ... code _is supposed to_ take care of that)
 - Video works **online** using Chrome in Android on Galaxy s8 (site not responsive, button not visible, so I couldn't test taking photo)
