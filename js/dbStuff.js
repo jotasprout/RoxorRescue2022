@@ -33,8 +33,6 @@
 
     form.addEventListener('saveStructure', makeStructure);
 
-    const structureForm = document.getElementById('structureForm').addEventListener('saveStructure', makeStructure);
-
     function showStructures() {
         pdb.allDocs (
             {
