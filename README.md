@@ -185,4 +185,4 @@ UNTESTED
 - Photo taken **online** using Firefox in Bodhi Linux (Ubuntu 16.04)
 - Photo taken **online** using Firefox in Windows 10 
 - Photo taken **online** using Edge in Windows 10 *however* the image paints with dimensions distorted disproportionately (from "widescreen" to being stretched vertically to fit ... code _is supposed to_ take care of that)
-- Video works **online** using Chrome in Android on Galaxy s8 (site not responsive, button not visible, so I couldn't test taking photo)
+- Photo taken **online** using Chrome in Android on Galaxy s8 (site not responsive)
