@@ -1,14 +1,16 @@
 (function () {
 
     // let structureObject;
-
     // let PouchDB = require("PouchDB");
 
     const pdb = new PouchDB('structures');
 
-    const form = document.getElementById('structureForm');
+    // const form = document.getElementById('structureForm');
+    // maybe forget about above
     
-    const remoteCouch = "http://admin:passWordsSuck!@localhost:5984/structures";
+    // const remoteCouch = "http://admin:passWordsSuck!@localhost:5984/structures";
+
+    
 
     makeStructure = function (event) {
         console.log("I am reading this function");
@@ -31,8 +33,9 @@
         });
     } // end of makeStructure
 
-    form.addEventListener('saveStructure', makeStructure);
-
+    // form.addEventListener('saveStructure', makeStructure);
+    // above hasn't worked
+    /*
     function showStructures() {
         pdb.allDocs (
             {
@@ -56,5 +59,6 @@
         pdb.replicate.to(remoteCouch, opts, synceError);
         pdb.replicate.from(remoteCouch, opts, syncError);
     }
+    */
 
 })();
