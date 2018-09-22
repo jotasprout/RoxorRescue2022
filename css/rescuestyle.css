@@ -40,6 +40,10 @@
 	z-index: 4;
 }
 
+label {
+	margin: 5px;
+}
+
 .textyText {
 	display: block;
 }
