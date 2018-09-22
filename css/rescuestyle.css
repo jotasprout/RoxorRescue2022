@@ -22,6 +22,10 @@
 	background-color: green;
 }
 
+.butt {
+	z-index: 4;
+}
+
 .quadrant {
 	display: flex;
 	flex-direction: column;

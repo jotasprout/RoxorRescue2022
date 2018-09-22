@@ -1,6 +1,6 @@
 (function() {
 
-    const width = 320;
+    const width = 800;
     let height = 0;
 
     let streaming = false;

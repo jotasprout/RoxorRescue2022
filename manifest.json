@@ -3,7 +3,7 @@
     "name": "RoxorRescue",
     "icons": [
         {
-            "src": "imgs/favicon.png",
+            "src": "favicon.png",
             "type": "image/png",
             "sizes": "32x32"
         }       
