@@ -1,15 +1,8 @@
-Submission for #CallForCode
-callforcode.org
+# RoxorRescue
+Originally intended as a submission for [CallForCode](http://www.callforcode.org)
 
-# Submission Application Information
-**Team Name:** RoxorSoxor
-
-**Submission Title:** RoxorRescue
-
-**Submission Summary:**  
 Collaborative, centralized, offline-first, search and rescue.
 
-**More Detailed Solution Description**
 Application and system for collaborative, offline-first, search and rescue. Users can track structures searched and store data about such S&R which can be shared and synced between users and (after it is developed) between teams of users.
 
 ## 5-12 Recon Operations (covered by RoxorRescue)
