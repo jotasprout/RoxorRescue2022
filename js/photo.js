@@ -49,6 +49,18 @@
             console.log("Ann error occurred! " + err);
         });
 
+        let count = 1;
+
+        mediaDevices.forEach(mediaDevice => {
+            if (mediaDevice.kind === 'videoinput') {
+                const option = document.createElement('option');
+                option.value = mediaDevice.deviceId;
+                const label = mediaDevice.label||`Camera${count}`;
+                const textNode = document.createTextNode(label);
+                option.appendChild(textNode);
+                select.appendChild(option);
+            };
+        });
 
         video.addEventListener('canplay', function(ev){
             if (!streaming){
