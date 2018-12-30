@@ -9,6 +9,9 @@
     let canvas = null;
     let photo = null;
     let snap = null;
+	
+	const button = document.getElementById('chooseCam');
+	const select = document.getElementById('availableCams');
 
     function startup(){
         video = document.getElementById('video');
@@ -49,19 +52,24 @@
             console.log("Ann error occurred! " + err);
         });
 
-        let count = 1;
-
-        mediaDevices.forEach(mediaDevice => {
-            if (mediaDevice.kind === 'videoinput') {
-                const option = document.createElement('option');
-                option.value = mediaDevice.deviceId;
-                const label = mediaDevice.label||`Camera${count}`;
-                const textNode = document.createTextNode(label);
-                option.appendChild(textNode);
-                select.appendChild(option);
-            };
-        });
-
+		// from twilio article		
+		function gotDevices(mediaDevices) {
+		  select.innerHTML = '';
+		  select.appendChild(document.createElement('option'));
+		  let count = 1;
+		  mediaDevices.forEach(mediaDevice => {
+			if (mediaDevice.kind === 'videoinput') {
+			  const option = document.createElement('option');
+			  option.value = mediaDevice.deviceId;
+			  const label = mediaDevice.label || `Camera ${count++}`;
+			  const textNode = document.createTextNode(label);
+			  option.appendChild(textNode);
+			  select.appendChild(option);
+			}
+		  });
+		}
+		
+		
         video.addEventListener('canplay', function(ev){
             if (!streaming){
                 height = video.videoHeight / (video.videoWidth/width);
@@ -88,6 +96,8 @@
         }, false);
 
         clearPhoto();
+		
+		navigator.mediaDevices.enumerateDevices().then(gotDevices);
     }
 
     function clearPhoto(){
@@ -146,6 +156,9 @@
     // Set up our event listener to run the startup process
     // once loading is complete.
     window.addEventListener('load', startup, false);
+	
+	
 
 })();
 // Also added the (); at the very end which wasn't in tutorial
+
