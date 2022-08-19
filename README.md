@@ -1,4 +1,5 @@
 # RoxorRescue
+
 Originally intended as a submission for [CallForCode](http://www.callforcode.org)
 
 Collaborative, centralized, offline-first, search and rescue.
@@ -6,6 +7,7 @@ Collaborative, centralized, offline-first, search and rescue.
 Application and system for collaborative, offline-first, search and rescue. Users can track structures searched and store data about such S&R which can be shared and synced between users and (after it is developed) between teams of users.
 
 ## 5-12 Recon Operations (covered by RoxorRescue)
+
 - Identify buildings
 - Structure/hazards marking
 - Area/building search
@@ -19,6 +21,7 @@ Only item in _US&R-23-FG_ that might not be covered is "Assess void space and at
 Current vision for app includes these simple tasks. 
 
 **Other Benefits**
+
 - Consistent data structure - in the past, different teams _"often used a derivative of the 'X'. Many improvised their own version, and some may not have used a marking system at all."_ (Miller) Also, from what I've read, there are multiple 'TFW' variants that, to this day, nobody knows the origin of.
 - No need to search for where 'X' may have been put by another team
 - In such a situation, #offlineFirst is a huge benefit.
@@ -30,6 +33,7 @@ Current vision for app includes these simple tasks.
 - Eliminates having to clean off spray paint
 
 ## UX/UI
+
 Here is the current UI/UX concept I scrambled in Photoshop:
 
 <img src="https://github.com/jotasprout/RoxorRescue/blob/master/imgs/UIsketch.jpg" width="500" height=auto alt="Photo of a house with FEMA search symbols overlay">
@@ -52,6 +56,7 @@ Map view also used to coordinate teams into regions, supporting them with real-t
 <img src="https://github.com/jotasprout/RoxorRescue/blob/master/imgs/miamiBeachGoogleMap_searchAss.jpg" width="500" height=auto alt="Similar map of Miami Beach. Structures marked with search assessment symbols">
 
 Alternate or additional markings (taken from _US&R-23-FG_) on map view indicating (from top to bottom):
+
 - "Structure relatively safe for US&R operations.
 - "Ongoing search" upon entry into structure.
 - Upon exit of initial search.
@@ -60,13 +65,15 @@ Alternate or additional markings (taken from _US&R-23-FG_) on map view indicatin
 - New search completed? This may not be need in app.
 - Structure significantly damaged. Shoring/removal of hazards may be required.
 
-Incomplete S&R Markings:
+**Incomplete S&R Markings:**
+
 - Filled circle at slashes intersection
 - Victim(s) location(s) marking(s). In "real life," markings include direction/arrow and distance but app would need/use the floor/location markings mentioned below
 - Box below slash(es) with floor(s) and quadrant(s) searched or "No Entry" if only exterior searched
 - "Cross out" marking when victim(s) removed (*see below*)
 
-5-9 INSARAG
+**5-9 INSARAG**
+
 - Number of Live victims removed
 - Number of Dead victims removed
 - Persons unaccounted for
@@ -86,18 +93,21 @@ Concept and purpose of app based on what is commonly referred to as the "Katrina
 <img src="https://github.com/jotasprout/RoxorRescue/blob/master/imgs/Katrina_x_small.jpg" width="500" height=auto alt="Each diamond contains image about search(es) performed on the house.">
 
 ## Other Tools
+
 - [OpenStreetMap](https://www.openstreetmap.org)
 - GeoCoder
 - turbo thingy
 - [GeoCoder](https://geocoding.geo.census.gov/) from .gov 
 
 ## Links to Call for Code related stuff
+
 - Noodle thing
 - My IBM Coder profile page or whatever
 
 # Solution Roadmap
 
 ## Features - Current
+
 - Displays date
 - Displays time
 - Displays Longitude & Latitude
@@ -106,10 +116,12 @@ Concept and purpose of app based on what is commonly referred to as the "Katrina
 ### Current - Completed
 
 ### Current - In Development
+
 - Use camera to take photo for BG and confirmation of address by comparing to data and other photos
 - X-Code overlaid onto image of structure
 
 ### Future - Near
+
 - Reverse GeoCoding for street address of structure (photo would confirm this as sometimes addresses gained like this aren't accurate -- this isn't too bad as _US&R-23-FG_ 5-3 "settles for" using "low numbers" if "no numbers known")
 - Could incorporate data and interactive UI via augmented reality in personell equipment
 - Indications of areas with power outages and/or power returned
@@ -125,6 +137,7 @@ Concept and purpose of app based on what is commonly referred to as the "Katrina
 - Data syncs with other users (essential)
 
 ### Future - "Far"
+
 Future additions (either to this mobile version or a larger "manager" version) could include:
 
 - Data from all devices and teams consolidated in single database
@@ -136,10 +149,12 @@ Future additions (either to this mobile version or a larger "manager" version) c
 - Mobile app could have short menus with editable fields supplemented by a "manager" populating menus with options unique to but standard within disaster region or entity
 
 ### Future - Even Further
+
 - Voice activated input for data -- the great part about this is the simplicity of the commands
 - Augmented Reality with directional arrows, text, and symbols for hazards, victims, etc.
 
 ## IBM Cloud stuff used
+
 - Cloudant (CloudUpps could be a free alternative if cost is a concern -- this app should be free to all who need it)
 - Cloud Foundry CLI (now called IBM Cloud CLI?)
 - App ID for user registration and profiles?
@@ -154,10 +169,13 @@ Future additions (either to this mobile version or a larger "manager" version) c
 - Could IoT be used to tell user that a refridgerator or storeroom has food and water so user could inform living victims that can not yet be rescued? Could visual recognition and IoT be used separately or together to then advise whether victims can safely reach that food and water?
 
 ## Use and Deployment
+
 [Deploy to IBM Cloud](https://bluemix.net/deploy?repository=https://github.com/jotasprout/RoxorRescue)
 
 # Tests
+
 **Latitude and Longitude**
+
 - Latitude & Longitude display **online** using Chrome in MacOS
 - Latitude & Longitude display **online** using Firefox Developer Edition (**FDE**) in MacOS
 - Latitude & Longitude display **online** using Firefox in Windows 10
@@ -172,6 +190,7 @@ Future additions (either to this mobile version or a larger "manager" version) c
 UNTESTED
 
 **Photo**
+
 - Photo taken **online** using Chrome in MacOS
 - Photo taken **online** using FDE in MacOS
 - Photo taken **online** using Chromium in Bodhi Linux (Ubuntu 16.04)
